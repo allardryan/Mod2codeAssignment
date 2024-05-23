@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 45px;
+  margin-top: 45px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -15,8 +16,12 @@ p {
   margin-left: auto;
   font-family: sans-serif;
   color: black;
+  padding: 25px 10px 5px 10px;
 }
-
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
 /**** Responsive Framework ****/
 .row{
 	width:100%;
