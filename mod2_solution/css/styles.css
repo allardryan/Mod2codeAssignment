@@ -4,6 +4,7 @@
 }
 h1 {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 p {
@@ -15,9 +16,6 @@ p {
   margin-left: auto;
   font-family: sans-serif;
   color: white;
-}
-title {
-	text-align: center;
 }
 
 /**** Responsive Framework ****/
