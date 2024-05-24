@@ -1,4 +1,4 @@
-/********** Base styles **********/
+/**** Base styles ****/
 * {
   box-sizing: border-box;
 }
@@ -19,6 +19,8 @@ p {
   color: black;
   padding: 60px 20px 5px 20px;
 }
+/**** defining the releative positiong in our outer p elements within HTML so that we can allow
+ * for the section title elements to move as expected ****/
 p#container{
 	position: relative;
 }
@@ -30,6 +32,8 @@ p1 {
 	text-align: center;
 	width: 140px;
 }
+/**** defining our p ids with the necessary declarations that include the aboslute declaration
+ * that allows for the section titles to move as expected ****/
 #p1 {
 position: absolute;
 top: 0px;
@@ -49,13 +53,15 @@ top: 0px;
 right: 0px;
 background-color: #E2D19C;
 }
-/**** Responsive Framework ****/
+/**** Responsive Framework declaration****/
 .row{
 	width:100%;
 	margin: 0px;
 }
 
-/**** Desktop Version ****/
+/**** Desktop Version of our responsive framework columns. Each column is around 8.33% of the
+ * Total horizontal screen size allowing us to define how much each element where this is called
+ * to be sized and then change as the device size changes ****/
 @media (min-width: 992px) {
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 	float: left;
@@ -101,7 +107,8 @@ background-color: #E2D19C;
 }
 }
 
-/**** Tablet Version ****/
+/**** Tablet Version of responsive framework columns the main difference is the min and max width
+ * declarations that affect when this css declaration is used vs the others. ****/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 	float: left;
@@ -147,7 +154,8 @@ background-color: #E2D19C;
 }
 }
 
-/**** Mobile Version ****/
+/**** Mobile Version of responsive framework columns again changes the target size where this 
+ * will be used based on the screen width otherwise the same as the other two defined above ****/
 @media (max-width: 767px) {
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 	float: left;

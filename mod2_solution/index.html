@@ -8,8 +8,11 @@
 </head>
 <body>
 <h1>Our Menu</h1>
+<!-- class row calls our responsive design elements that allow for different device scaling and behavior.  Designated as Desktop, Tablet and Mobile. -->
 <div class="row">
+	<!--defining how to structure the 3 div elements depending on the defined sizes for the 3 devices in this assigment. 12 will take up the entire screen 6 is half the screen and 4 is one third.  Note this is defined for each of the 3 div elements contained withing the div where row is defined. -->
 	<div class="col-lg-4 col-md-6 col-sm-12">
+		<!-- The container id allows for absolute positioning to be used with p1, p2 and p3 ids. This works by giving the outer p tag a relative position declaration element in CSS and then using absolute positioning declaration for the inner p tag element. by doing this it allows the section title Chicken, Beef and Sushi to stay in the same position within the outer p element no matter how the screen is resized. This is duplicated for all 3 containing div elements as well as there p elements. -->
 		<p id="container"><p1 id="p1">Chicken</p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
